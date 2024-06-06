@@ -1,0 +1,175 @@
+{
+  "@context" : {
+    "HydrogenBond" : {
+      "@id" : "http://spatialai.org/cellograph/v1#HydrogenBond"
+    },
+    "composes" : {
+      "@id" : "http://spatialai.org/cellograph/v1#composes",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "SomeBacteria" : {
+      "@id" : "http://spatialai.org/cellograph/v1#SomeBacteria"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "rigidity" : {
+      "@id" : "http://spatialai.org/cellograph/v1#rigidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ChemicalBond" : {
+      "@id" : "http://spatialai.org/cellograph/v1#ChemicalBond"
+    },
+    "isFoundIn" : {
+      "@id" : "http://spatialai.org/cellograph/v1#isFoundIn",
+      "@type" : "@id"
+    },
+    "NitrocelluloseGunPowder" : {
+      "@id" : "http://spatialai.org/cellograph/v1#NitrocelluloseGunPowder"
+    },
+    "isInsolubleIn" : {
+      "@id" : "http://spatialai.org/cellograph/v1#isInsolubleIn",
+      "@type" : "@id"
+    },
+    "CellulosicFabric" : {
+      "@id" : "http://spatialai.org/cellograph/v1#CellulosicFabric"
+    },
+    "Polysaccharide" : {
+      "@id" : "http://spatialai.org/cellograph/v1#Polysaccharide"
+    },
+    "CelluloseNaturalSource" : {
+      "@id" : "http://spatialai.org/cellograph/v1#CelluloseNaturalSource"
+    },
+    "CelluloseMicrofibril" : {
+      "@id" : "http://spatialai.org/cellograph/v1#CelluloseMicrofibril"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Carbohydrate" : {
+      "@id" : "http://spatialai.org/cellograph/v1#Carbohydrate"
+    },
+    "hasPart" : {
+      "@id" : "http://spatialai.org/cellograph/v1#hasPart",
+      "@type" : "@id"
+    },
+    "Cellulose" : {
+      "@id" : "http://spatialai.org/cellograph/v1#Cellulose"
+    },
+    "Plant" : {
+      "@id" : "http://spatialai.org/cellograph/v1#Plant"
+    },
+    "FiberMaterial" : {
+      "@id" : "http://spatialai.org/cellograph/v1#FiberMaterial"
+    },
+    "CelluloseFiber" : {
+      "@id" : "http://spatialai.org/cellograph/v1#CelluloseFiber"
+    },
+    "MaterialEntity" : {
+      "@id" : "http://spatialai.org/cellograph/v1#MaterialEntity"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "CellulosicProduct" : {
+      "@id" : "http://spatialai.org/cellograph/v1#CellulosicProduct"
+    },
+    "Water" : {
+      "@id" : "http://spatialai.org/cellograph/v1#Water"
+    },
+    "taste" : {
+      "@id" : "http://spatialai.org/cellograph/v1#taste",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "hydrophilicity" : {
+      "@id" : "http://spatialai.org/cellograph/v1#hydrophilicity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PlantCell" : {
+      "@id" : "http://spatialai.org/cellograph/v1#PlantCell"
+    },
+    "subject" : {
+      "@id" : "http://purl.org/dc/terms/subject"
+    },
+    "isLinkedWith" : {
+      "@id" : "http://spatialai.org/cellograph/v1#isLinkedWith",
+      "@type" : "@id"
+    },
+    "produce" : {
+      "@id" : "http://spatialai.org/cellograph/v1#produce",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "state" : {
+      "@id" : "http://spatialai.org/cellograph/v1#state",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "CelluloseDerivedBiofuel" : {
+      "@id" : "http://spatialai.org/cellograph/v1#CelluloseDerivedBiofuel"
+    },
+    "OrganicCompound" : {
+      "@id" : "http://spatialai.org/cellograph/v1#OrganicCompound"
+    },
+    "CarbonAtom" : {
+      "@id" : "http://spatialai.org/cellograph/v1#CarbonAtom"
+    },
+    "ChemicalEntity" : {
+      "@id" : "http://spatialai.org/cellograph/v1#ChemicalEntity"
+    },
+    "Atom" : {
+      "@id" : "http://spatialai.org/cellograph/v1#Atom"
+    },
+    "isComposedOf" : {
+      "@id" : "http://spatialai.org/cellograph/v1#isComposedOf",
+      "@type" : "@id"
+    },
+    "chirality" : {
+      "@id" : "http://spatialai.org/cellograph/v1#chirality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "HydrogenAtom" : {
+      "@id" : "http://spatialai.org/cellograph/v1#HydrogenAtom"
+    },
+    "polarity" : {
+      "@id" : "http://spatialai.org/cellograph/v1#polarity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OxygenAtom" : {
+      "@id" : "http://spatialai.org/cellograph/v1#OxygenAtom"
+    },
+    "SomeAnimal" : {
+      "@id" : "http://spatialai.org/cellograph/v1#SomeAnimal"
+    },
+    "D-Glucose" : {
+      "@id" : "http://spatialai.org/cellograph/v1#D-Glucose"
+    },
+    "GlycosidicBond" : {
+      "@id" : "http://spatialai.org/cellograph/v1#GlycosidicBond"
+    },
+    "odor" : {
+      "@id" : "http://spatialai.org/cellograph/v1#odor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "degradability" : {
+      "@id" : "http://spatialai.org/cellograph/v1#degradability",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CellulosicPaper" : {
+      "@id" : "http://spatialai.org/cellograph/v1#CellulosicPaper"
+    }
+  }
+}
