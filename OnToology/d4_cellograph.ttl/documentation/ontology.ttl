@@ -1,0 +1,477 @@
+@prefix : <http://spatialai.org/cellograph/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://spatialai.org/cellograph/v1#> .
+
+<http://spatialai.org/cellograph/v1#> rdf:type owl:Ontology ;
+                                       owl:versionIRI <http://spatialai.org/cellograph/v1> ;
+                                       <http://purl.org/dc/terms/created> "2021-12-01"^^xsd:date ;
+                                       <http://purl.org/dc/terms/creator> "Xuelian & Umayer & Tyler"@en-us ;
+                                       <http://purl.org/dc/terms/license> <http://spatialai.org/software> ;
+                                       <http://purl.org/dc/terms/modified> "2021-12-21"^^xsd:date ;
+                                       <http://purl.org/dc/terms/publisher> <http://spatialai.org/> ;
+                                       <http://purl.org/dc/terms/rights> "Copyright 2021 - 2031 UMaine/SKAI."@en-us ;
+                                       <http://purl.org/dc/terms/subject> "Ontology"@en-us ;
+                                       rdfs:label " CelloGragh "@en-us ;
+                                       owl:versionInfo "1.0"@en-us .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/subject
+<http://purl.org/dc/terms/subject> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#Cardinality
+owl:Cardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#minCardinality
+owl:minCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://spatialai.org/cellograph/v1#composes
+:composes rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isComposedOf ;
+          rdf:type owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :MaterialEntity ;
+          rdfs:range :MaterialEntity .
+
+
+###  http://spatialai.org/cellograph/v1#hasPart
+:hasPart rdf:type owl:ObjectProperty ,
+                  owl:AsymmetricProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :MaterialEntity ;
+         rdfs:range :MaterialEntity .
+
+
+###  http://spatialai.org/cellograph/v1#isComposedOf
+:isComposedOf rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :MaterialEntity ;
+              rdfs:range :MaterialEntity .
+
+
+###  http://spatialai.org/cellograph/v1#isFoundIn
+:isFoundIn rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasPart ;
+           rdf:type owl:AsymmetricProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :MaterialEntity ;
+           rdfs:range :MaterialEntity .
+
+
+###  http://spatialai.org/cellograph/v1#isInsolubleIn
+:isInsolubleIn rdf:type owl:ObjectProperty ,
+                        owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain :MaterialEntity ;
+               rdfs:range :MaterialEntity .
+
+
+###  http://spatialai.org/cellograph/v1#isLinkedWith
+:isLinkedWith rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :MaterialEntity ;
+              rdfs:range :ChemicalBond .
+
+
+###  http://spatialai.org/cellograph/v1#produce
+:produce rdf:type owl:ObjectProperty ,
+                  owl:AsymmetricProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :CelluloseNaturalSource ;
+         rdfs:range :Cellulose .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://spatialai.org/cellograph/v1#chirality
+:chirality rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Cellulose ;
+           rdfs:range xsd:string .
+
+
+###  http://spatialai.org/cellograph/v1#degradability
+:degradability rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Cellulose ;
+               rdfs:range xsd:string .
+
+
+###  http://spatialai.org/cellograph/v1#hydrophilicity
+:hydrophilicity rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Cellulose ;
+                rdfs:range xsd:string .
+
+
+###  http://spatialai.org/cellograph/v1#odor
+:odor rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Cellulose ;
+      rdfs:range xsd:string .
+
+
+###  http://spatialai.org/cellograph/v1#polarity
+:polarity rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Cellulose ;
+          rdfs:range xsd:string .
+
+
+###  http://spatialai.org/cellograph/v1#rigidity
+:rigidity rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Cellulose ;
+          rdfs:range xsd:string .
+
+
+###  http://spatialai.org/cellograph/v1#state
+:state rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Cellulose ;
+       rdfs:range xsd:string .
+
+
+###  http://spatialai.org/cellograph/v1#taste
+:taste rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Cellulose ;
+       rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://spatialai.org/cellograph/v1#Atom
+:Atom rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalEntity ;
+      owl:disjointUnionOf ( :CarbonAtom
+                            :HydrogenAtom
+                            :OxygenAtom
+                          ) .
+
+
+###  http://spatialai.org/cellograph/v1#Carbohydrate
+:Carbohydrate rdf:type owl:Class ;
+              rdfs:subClassOf :OrganicCompound ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasPart ;
+                                owl:someValuesFrom :HydrogenAtom
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasPart ;
+                                owl:someValuesFrom :OxygenAtom
+                              ] ;
+              owl:disjointUnionOf ( :D-Glucose
+                                    :Polysaccharide
+                                  ) .
+
+
+###  http://spatialai.org/cellograph/v1#CarbonAtom
+:CarbonAtom rdf:type owl:Class ;
+            rdfs:subClassOf :Atom ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isFoundIn ;
+                              owl:someValuesFrom :OrganicCompound
+                            ] .
+
+
+###  http://spatialai.org/cellograph/v1#Cellulose
+:Cellulose rdf:type owl:Class ;
+           rdfs:subClassOf :Polysaccharide ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isInsolubleIn ;
+                             owl:someValuesFrom :Water
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isComposedOf ;
+                             owl:allValuesFrom :D-Glucose
+                           ] .
+
+
+###  http://spatialai.org/cellograph/v1#CelluloseDerivedBiofuel
+:CelluloseDerivedBiofuel rdf:type owl:Class ;
+                         rdfs:subClassOf :CellulosicProduct .
+
+
+###  http://spatialai.org/cellograph/v1#CelluloseFiber
+:CelluloseFiber rdf:type owl:Class ;
+                rdfs:subClassOf :FiberMaterial ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isComposedOf ;
+                                  owl:someValuesFrom :Cellulose
+                                ] .
+
+
+###  http://spatialai.org/cellograph/v1#CelluloseMicrofibril
+:CelluloseMicrofibril rdf:type owl:Class ;
+                      rdfs:subClassOf :MaterialEntity ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :isFoundIn ;
+                                        owl:someValuesFrom :PlantCell
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :isLinkedWith ;
+                                        owl:someValuesFrom :HydrogenBond
+                                      ] .
+
+
+###  http://spatialai.org/cellograph/v1#CelluloseNaturalSource
+:CelluloseNaturalSource rdf:type owl:Class ;
+                        rdfs:subClassOf :MaterialEntity ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :produce ;
+                                          owl:someValuesFrom :Cellulose
+                                        ] ;
+                        owl:disjointUnionOf ( :Plant
+                                              :SomeAnimal
+                                              :SomeBacteria
+                                            ) .
+
+
+###  http://spatialai.org/cellograph/v1#CellulosicFabric
+:CellulosicFabric rdf:type owl:Class ;
+                  rdfs:subClassOf :CellulosicProduct .
+
+
+###  http://spatialai.org/cellograph/v1#CellulosicPaper
+:CellulosicPaper rdf:type owl:Class ;
+                 rdfs:subClassOf :CellulosicProduct .
+
+
+###  http://spatialai.org/cellograph/v1#CellulosicProduct
+:CellulosicProduct rdf:type owl:Class ;
+                   rdfs:subClassOf :MaterialEntity ;
+                   owl:disjointUnionOf ( :CelluloseDerivedBiofuel
+                                         :CellulosicFabric
+                                         :CellulosicPaper
+                                         :NitrocelluloseGunPowder
+                                       ) .
+
+
+###  http://spatialai.org/cellograph/v1#ChemicalBond
+:ChemicalBond rdf:type owl:Class ;
+              rdfs:subClassOf :ChemicalEntity ;
+              owl:disjointUnionOf ( :GlycosidicBond
+                                    :HydrogenBond
+                                  ) .
+
+
+###  http://spatialai.org/cellograph/v1#ChemicalEntity
+:ChemicalEntity rdf:type owl:Class ;
+                rdfs:subClassOf :MaterialEntity .
+
+
+###  http://spatialai.org/cellograph/v1#D-Glucose
+:D-Glucose rdf:type owl:Class ;
+           rdfs:subClassOf :Carbohydrate ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasPart ;
+                             owl:someValuesFrom :CarbonAtom
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasPart ;
+                             owl:someValuesFrom :HydrogenAtom
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasPart ;
+                             owl:someValuesFrom :OxygenAtom
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isLinkedWith ;
+                             owl:someValuesFrom :GlycosidicBond
+                           ] .
+
+
+###  http://spatialai.org/cellograph/v1#FiberMaterial
+:FiberMaterial rdf:type owl:Class ;
+               rdfs:subClassOf :MaterialEntity .
+
+
+###  http://spatialai.org/cellograph/v1#GlycosidicBond
+:GlycosidicBond rdf:type owl:Class ;
+                rdfs:subClassOf :ChemicalBond .
+
+
+###  http://spatialai.org/cellograph/v1#HydrogenAtom
+:HydrogenAtom rdf:type owl:Class ;
+              rdfs:subClassOf :Atom ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :isFoundIn ;
+                                owl:someValuesFrom :Carbohydrate
+                              ] .
+
+
+###  http://spatialai.org/cellograph/v1#HydrogenBond
+:HydrogenBond rdf:type owl:Class ;
+              rdfs:subClassOf :ChemicalBond .
+
+
+###  http://spatialai.org/cellograph/v1#MaterialEntity
+:MaterialEntity rdf:type owl:Class .
+
+
+###  http://spatialai.org/cellograph/v1#NitrocelluloseGunPowder
+:NitrocelluloseGunPowder rdf:type owl:Class ;
+                         rdfs:subClassOf :CellulosicProduct .
+
+
+###  http://spatialai.org/cellograph/v1#OrganicCompound
+:OrganicCompound rdf:type owl:Class ;
+                 rdfs:subClassOf :ChemicalEntity ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasPart ;
+                                   owl:someValuesFrom :CarbonAtom
+                                 ] .
+
+
+###  http://spatialai.org/cellograph/v1#OxygenAtom
+:OxygenAtom rdf:type owl:Class ;
+            rdfs:subClassOf :Atom ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isFoundIn ;
+                              owl:someValuesFrom :Carbohydrate
+                            ] .
+
+
+###  http://spatialai.org/cellograph/v1#Plant
+:Plant rdf:type owl:Class ;
+       rdfs:subClassOf :CelluloseNaturalSource ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPart ;
+                         owl:someValuesFrom :PlantCell
+                       ] .
+
+
+###  http://spatialai.org/cellograph/v1#PlantCell
+:PlantCell rdf:type owl:Class ;
+           rdfs:subClassOf :MaterialEntity ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isFoundIn ;
+                             owl:someValuesFrom :Plant
+                           ] .
+
+
+###  http://spatialai.org/cellograph/v1#Polysaccharide
+:Polysaccharide rdf:type owl:Class ;
+                rdfs:subClassOf :Carbohydrate .
+
+
+###  http://spatialai.org/cellograph/v1#SomeAnimal
+:SomeAnimal rdf:type owl:Class ;
+            rdfs:subClassOf :CelluloseNaturalSource .
+
+
+###  http://spatialai.org/cellograph/v1#SomeBacteria
+:SomeBacteria rdf:type owl:Class ;
+              rdfs:subClassOf :CelluloseNaturalSource .
+
+
+###  http://spatialai.org/cellograph/v1#Water
+:Water rdf:type owl:Class ;
+       rdfs:subClassOf :MaterialEntity .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://spatialai.org/cellograph/v1#CarbonAtom
+:CarbonAtom rdf:type owl:NamedIndividual .
+
+
+###  http://spatialai.org/cellograph/v1#Cellulose
+:Cellulose rdf:type owl:NamedIndividual ;
+           :composes :CelluloseMicrofibril ;
+           :isComposedOf :D-Glucose ;
+           :isInsolubleIn :Water .
+
+
+###  http://spatialai.org/cellograph/v1#CelluloseMicrofibril
+:CelluloseMicrofibril rdf:type owl:NamedIndividual ;
+                      :isLinkedWith :HydrogenBond .
+
+
+###  http://spatialai.org/cellograph/v1#D-Glucose
+:D-Glucose rdf:type owl:NamedIndividual ;
+           :hasPart :CarbonAtom ,
+                    :HydrogenAtom ,
+                    :OxygenAtom ;
+           :isLinkedWith :GlycosidicBond .
+
+
+###  http://spatialai.org/cellograph/v1#GlycosidicBond
+:GlycosidicBond rdf:type owl:NamedIndividual .
+
+
+###  http://spatialai.org/cellograph/v1#HydrogenAtom
+:HydrogenAtom rdf:type owl:NamedIndividual .
+
+
+###  http://spatialai.org/cellograph/v1#HydrogenBond
+:HydrogenBond rdf:type owl:NamedIndividual .
+
+
+###  http://spatialai.org/cellograph/v1#OxygenAtom
+:OxygenAtom rdf:type owl:NamedIndividual .
+
+
+###  http://spatialai.org/cellograph/v1#Water
+:Water rdf:type owl:NamedIndividual .
+
+
+[ owl:Cardinality "12"^^xsd:nonNegativeInteger
+] .
+
+[ owl:Cardinality "6"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minCardinality "500"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:Cardinality "6"^^xsd:nonNegativeInteger
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

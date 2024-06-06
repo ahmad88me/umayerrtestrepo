@@ -1,0 +1,456 @@
+<http://spatialai.org/cellograph/v1#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://spatialai.org/cellograph/v1#> <http://www.w3.org/2002/07/owl#versionIRI> <http://spatialai.org/cellograph/v1> .
+<http://spatialai.org/cellograph/v1#> <http://purl.org/dc/terms/created> "2021-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://spatialai.org/cellograph/v1#> <http://purl.org/dc/terms/creator> "Xuelian & Umayer & Tyler"@en-us .
+<http://spatialai.org/cellograph/v1#> <http://purl.org/dc/terms/license> <http://spatialai.org/software> .
+<http://spatialai.org/cellograph/v1#> <http://purl.org/dc/terms/modified> "2021-12-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://spatialai.org/cellograph/v1#> <http://purl.org/dc/terms/publisher> <http://spatialai.org/> .
+<http://spatialai.org/cellograph/v1#> <http://purl.org/dc/terms/rights> "Copyright 2021 - 2031 UMaine/SKAI."@en-us .
+<http://spatialai.org/cellograph/v1#> <http://purl.org/dc/terms/subject> "Ontology"@en-us .
+<http://spatialai.org/cellograph/v1#> <http://www.w3.org/2000/01/rdf-schema#label> " CelloGragh "@en-us .
+<http://spatialai.org/cellograph/v1#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"@en-us .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/subject
+<http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#Cardinality
+<http://www.w3.org/2002/07/owl#Cardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#minCardinality
+<http://www.w3.org/2002/07/owl#minCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://spatialai.org/cellograph/v1#composes
+<http://spatialai.org/cellograph/v1#composes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://spatialai.org/cellograph/v1#composes> <http://www.w3.org/2002/07/owl#inverseOf> <http://spatialai.org/cellograph/v1#isComposedOf> .
+<http://spatialai.org/cellograph/v1#composes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://spatialai.org/cellograph/v1#composes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://spatialai.org/cellograph/v1#composes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+<http://spatialai.org/cellograph/v1#composes> <http://www.w3.org/2000/01/rdf-schema#range> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+# 
+# http://spatialai.org/cellograph/v1#hasPart
+<http://spatialai.org/cellograph/v1#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://spatialai.org/cellograph/v1#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://spatialai.org/cellograph/v1#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://spatialai.org/cellograph/v1#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+<http://spatialai.org/cellograph/v1#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+# 
+# http://spatialai.org/cellograph/v1#isComposedOf
+<http://spatialai.org/cellograph/v1#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://spatialai.org/cellograph/v1#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://spatialai.org/cellograph/v1#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://spatialai.org/cellograph/v1#isComposedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+<http://spatialai.org/cellograph/v1#isComposedOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+# 
+# http://spatialai.org/cellograph/v1#isFoundIn
+<http://spatialai.org/cellograph/v1#isFoundIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://spatialai.org/cellograph/v1#isFoundIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://spatialai.org/cellograph/v1#hasPart> .
+<http://spatialai.org/cellograph/v1#isFoundIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://spatialai.org/cellograph/v1#isFoundIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://spatialai.org/cellograph/v1#isFoundIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+<http://spatialai.org/cellograph/v1#isFoundIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+# 
+# http://spatialai.org/cellograph/v1#isInsolubleIn
+<http://spatialai.org/cellograph/v1#isInsolubleIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://spatialai.org/cellograph/v1#isInsolubleIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://spatialai.org/cellograph/v1#isInsolubleIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://spatialai.org/cellograph/v1#isInsolubleIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+<http://spatialai.org/cellograph/v1#isInsolubleIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+# 
+# http://spatialai.org/cellograph/v1#isLinkedWith
+<http://spatialai.org/cellograph/v1#isLinkedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://spatialai.org/cellograph/v1#isLinkedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://spatialai.org/cellograph/v1#isLinkedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://spatialai.org/cellograph/v1#isLinkedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+<http://spatialai.org/cellograph/v1#isLinkedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://spatialai.org/cellograph/v1#ChemicalBond> .
+<http://spatialai.org/cellograph/v1#ChemicalBond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://spatialai.org/cellograph/v1#produce
+<http://spatialai.org/cellograph/v1#produce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://spatialai.org/cellograph/v1#produce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://spatialai.org/cellograph/v1#produce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://spatialai.org/cellograph/v1#produce> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#CelluloseNaturalSource> .
+<http://spatialai.org/cellograph/v1#CelluloseNaturalSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#produce> <http://www.w3.org/2000/01/rdf-schema#range> <http://spatialai.org/cellograph/v1#Cellulose> .
+<http://spatialai.org/cellograph/v1#Cellulose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://spatialai.org/cellograph/v1#chirality
+<http://spatialai.org/cellograph/v1#chirality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://spatialai.org/cellograph/v1#chirality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#Cellulose> .
+<http://spatialai.org/cellograph/v1#chirality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://spatialai.org/cellograph/v1#degradability
+<http://spatialai.org/cellograph/v1#degradability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://spatialai.org/cellograph/v1#degradability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#Cellulose> .
+<http://spatialai.org/cellograph/v1#degradability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://spatialai.org/cellograph/v1#hydrophilicity
+<http://spatialai.org/cellograph/v1#hydrophilicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://spatialai.org/cellograph/v1#hydrophilicity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#Cellulose> .
+<http://spatialai.org/cellograph/v1#hydrophilicity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://spatialai.org/cellograph/v1#odor
+<http://spatialai.org/cellograph/v1#odor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://spatialai.org/cellograph/v1#odor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#Cellulose> .
+<http://spatialai.org/cellograph/v1#odor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://spatialai.org/cellograph/v1#polarity
+<http://spatialai.org/cellograph/v1#polarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://spatialai.org/cellograph/v1#polarity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#Cellulose> .
+<http://spatialai.org/cellograph/v1#polarity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://spatialai.org/cellograph/v1#rigidity
+<http://spatialai.org/cellograph/v1#rigidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://spatialai.org/cellograph/v1#rigidity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#Cellulose> .
+<http://spatialai.org/cellograph/v1#rigidity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://spatialai.org/cellograph/v1#state
+<http://spatialai.org/cellograph/v1#state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://spatialai.org/cellograph/v1#state> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#Cellulose> .
+<http://spatialai.org/cellograph/v1#state> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://spatialai.org/cellograph/v1#taste
+<http://spatialai.org/cellograph/v1#taste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://spatialai.org/cellograph/v1#taste> <http://www.w3.org/2000/01/rdf-schema#domain> <http://spatialai.org/cellograph/v1#Cellulose> .
+<http://spatialai.org/cellograph/v1#taste> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://spatialai.org/cellograph/v1#Atom
+<http://spatialai.org/cellograph/v1#Atom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#Atom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#ChemicalEntity> .
+<http://spatialai.org/cellograph/v1#ChemicalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#Atom> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#OxygenAtom> .
+<http://spatialai.org/cellograph/v1#OxygenAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#HydrogenAtom> .
+<http://spatialai.org/cellograph/v1#HydrogenAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#CarbonAtom> .
+<http://spatialai.org/cellograph/v1#CarbonAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://spatialai.org/cellograph/v1#Carbohydrate
+<http://spatialai.org/cellograph/v1#Carbohydrate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#Carbohydrate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#OrganicCompound> .
+<http://spatialai.org/cellograph/v1#OrganicCompound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#Carbohydrate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#HydrogenAtom> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#hasPart> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://spatialai.org/cellograph/v1#Carbohydrate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#OxygenAtom> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#hasPart> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://spatialai.org/cellograph/v1#Carbohydrate> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#Polysaccharide> .
+<http://spatialai.org/cellograph/v1#Polysaccharide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#D-Glucose> .
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://spatialai.org/cellograph/v1#CarbonAtom
+<http://spatialai.org/cellograph/v1#CarbonAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#Atom> .
+<http://spatialai.org/cellograph/v1#CarbonAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#OrganicCompound> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#isFoundIn> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://spatialai.org/cellograph/v1#Cellulose
+<http://spatialai.org/cellograph/v1#Cellulose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#Polysaccharide> .
+<http://spatialai.org/cellograph/v1#Cellulose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#Water> .
+<http://spatialai.org/cellograph/v1#Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#isInsolubleIn> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://spatialai.org/cellograph/v1#Cellulose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://spatialai.org/cellograph/v1#D-Glucose> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#isComposedOf> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://spatialai.org/cellograph/v1#CelluloseDerivedBiofuel
+<http://spatialai.org/cellograph/v1#CelluloseDerivedBiofuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#CelluloseDerivedBiofuel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#CellulosicProduct> .
+<http://spatialai.org/cellograph/v1#CellulosicProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://spatialai.org/cellograph/v1#CelluloseFiber
+<http://spatialai.org/cellograph/v1#CelluloseFiber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#CelluloseFiber> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#FiberMaterial> .
+<http://spatialai.org/cellograph/v1#FiberMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#CelluloseFiber> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#Cellulose> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#isComposedOf> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://spatialai.org/cellograph/v1#CelluloseMicrofibril
+<http://spatialai.org/cellograph/v1#CelluloseMicrofibril> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#CelluloseMicrofibril> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+<http://spatialai.org/cellograph/v1#CelluloseMicrofibril> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#PlantCell> .
+<http://spatialai.org/cellograph/v1#PlantCell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#isFoundIn> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://spatialai.org/cellograph/v1#CelluloseMicrofibril> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#HydrogenBond> .
+<http://spatialai.org/cellograph/v1#HydrogenBond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#isLinkedWith> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://spatialai.org/cellograph/v1#CelluloseNaturalSource
+<http://spatialai.org/cellograph/v1#CelluloseNaturalSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+<http://spatialai.org/cellograph/v1#CelluloseNaturalSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#Cellulose> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#produce> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://spatialai.org/cellograph/v1#CelluloseNaturalSource> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#SomeBacteria> .
+<http://spatialai.org/cellograph/v1#SomeBacteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#SomeAnimal> .
+<http://spatialai.org/cellograph/v1#SomeAnimal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#Plant> .
+<http://spatialai.org/cellograph/v1#Plant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://spatialai.org/cellograph/v1#CellulosicFabric
+<http://spatialai.org/cellograph/v1#CellulosicFabric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#CellulosicFabric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#CellulosicProduct> .
+# 
+# http://spatialai.org/cellograph/v1#CellulosicPaper
+<http://spatialai.org/cellograph/v1#CellulosicPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://spatialai.org/cellograph/v1#CellulosicPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#CellulosicProduct> .
+# 
+# http://spatialai.org/cellograph/v1#CellulosicProduct
+<http://spatialai.org/cellograph/v1#CellulosicProduct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+<http://spatialai.org/cellograph/v1#CellulosicProduct> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#NitrocelluloseGunPowder> .
+<http://spatialai.org/cellograph/v1#NitrocelluloseGunPowder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#CellulosicPaper> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#CellulosicFabric> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#CelluloseDerivedBiofuel> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://spatialai.org/cellograph/v1#ChemicalBond
+<http://spatialai.org/cellograph/v1#ChemicalBond> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#ChemicalEntity> .
+<http://spatialai.org/cellograph/v1#ChemicalBond> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#HydrogenBond> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://spatialai.org/cellograph/v1#GlycosidicBond> .
+<http://spatialai.org/cellograph/v1#GlycosidicBond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://spatialai.org/cellograph/v1#ChemicalEntity
+<http://spatialai.org/cellograph/v1#ChemicalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+# 
+# http://spatialai.org/cellograph/v1#D-Glucose
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#Carbohydrate> .
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#CarbonAtom> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#hasPart> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#HydrogenAtom> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#hasPart> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#OxygenAtom> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#hasPart> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#GlycosidicBond> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#isLinkedWith> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://spatialai.org/cellograph/v1#FiberMaterial
+<http://spatialai.org/cellograph/v1#FiberMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+# 
+# http://spatialai.org/cellograph/v1#GlycosidicBond
+<http://spatialai.org/cellograph/v1#GlycosidicBond> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#ChemicalBond> .
+# 
+# http://spatialai.org/cellograph/v1#HydrogenAtom
+<http://spatialai.org/cellograph/v1#HydrogenAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#Atom> .
+<http://spatialai.org/cellograph/v1#HydrogenAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#Carbohydrate> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#isFoundIn> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://spatialai.org/cellograph/v1#HydrogenBond
+<http://spatialai.org/cellograph/v1#HydrogenBond> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#ChemicalBond> .
+# 
+# http://spatialai.org/cellograph/v1#MaterialEntity
+<http://spatialai.org/cellograph/v1#MaterialEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://spatialai.org/cellograph/v1#NitrocelluloseGunPowder
+<http://spatialai.org/cellograph/v1#NitrocelluloseGunPowder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#CellulosicProduct> .
+# 
+# http://spatialai.org/cellograph/v1#OrganicCompound
+<http://spatialai.org/cellograph/v1#OrganicCompound> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#ChemicalEntity> .
+<http://spatialai.org/cellograph/v1#OrganicCompound> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#CarbonAtom> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#hasPart> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://spatialai.org/cellograph/v1#OxygenAtom
+<http://spatialai.org/cellograph/v1#OxygenAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#Atom> .
+<http://spatialai.org/cellograph/v1#OxygenAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#Carbohydrate> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#isFoundIn> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://spatialai.org/cellograph/v1#Plant
+<http://spatialai.org/cellograph/v1#Plant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#CelluloseNaturalSource> .
+<http://spatialai.org/cellograph/v1#Plant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#PlantCell> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#hasPart> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://spatialai.org/cellograph/v1#PlantCell
+<http://spatialai.org/cellograph/v1#PlantCell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+<http://spatialai.org/cellograph/v1#PlantCell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://spatialai.org/cellograph/v1#Plant> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://spatialai.org/cellograph/v1#isFoundIn> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://spatialai.org/cellograph/v1#Polysaccharide
+<http://spatialai.org/cellograph/v1#Polysaccharide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#Carbohydrate> .
+# 
+# http://spatialai.org/cellograph/v1#SomeAnimal
+<http://spatialai.org/cellograph/v1#SomeAnimal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#CelluloseNaturalSource> .
+# 
+# http://spatialai.org/cellograph/v1#SomeBacteria
+<http://spatialai.org/cellograph/v1#SomeBacteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#CelluloseNaturalSource> .
+# 
+# http://spatialai.org/cellograph/v1#Water
+<http://spatialai.org/cellograph/v1#Water> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://spatialai.org/cellograph/v1#MaterialEntity> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://spatialai.org/cellograph/v1#CarbonAtom
+<http://spatialai.org/cellograph/v1#CarbonAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://spatialai.org/cellograph/v1#Cellulose
+<http://spatialai.org/cellograph/v1#Cellulose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://spatialai.org/cellograph/v1#Cellulose> <http://spatialai.org/cellograph/v1#composes> <http://spatialai.org/cellograph/v1#CelluloseMicrofibril> .
+<http://spatialai.org/cellograph/v1#CelluloseMicrofibril> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://spatialai.org/cellograph/v1#Cellulose> <http://spatialai.org/cellograph/v1#isComposedOf> <http://spatialai.org/cellograph/v1#D-Glucose> .
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://spatialai.org/cellograph/v1#Cellulose> <http://spatialai.org/cellograph/v1#isInsolubleIn> <http://spatialai.org/cellograph/v1#Water> .
+<http://spatialai.org/cellograph/v1#Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://spatialai.org/cellograph/v1#CelluloseMicrofibril
+<http://spatialai.org/cellograph/v1#CelluloseMicrofibril> <http://spatialai.org/cellograph/v1#isLinkedWith> <http://spatialai.org/cellograph/v1#HydrogenBond> .
+<http://spatialai.org/cellograph/v1#HydrogenBond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://spatialai.org/cellograph/v1#D-Glucose
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://spatialai.org/cellograph/v1#hasPart> <http://spatialai.org/cellograph/v1#CarbonAtom> .
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://spatialai.org/cellograph/v1#hasPart> <http://spatialai.org/cellograph/v1#HydrogenAtom> .
+<http://spatialai.org/cellograph/v1#HydrogenAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://spatialai.org/cellograph/v1#hasPart> <http://spatialai.org/cellograph/v1#OxygenAtom> .
+<http://spatialai.org/cellograph/v1#OxygenAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://spatialai.org/cellograph/v1#D-Glucose> <http://spatialai.org/cellograph/v1#isLinkedWith> <http://spatialai.org/cellograph/v1#GlycosidicBond> .
+<http://spatialai.org/cellograph/v1#GlycosidicBond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://spatialai.org/cellograph/v1#GlycosidicBond
+# 
+# http://spatialai.org/cellograph/v1#HydrogenAtom
+# 
+# http://spatialai.org/cellograph/v1#HydrogenBond
+# 
+# http://spatialai.org/cellograph/v1#OxygenAtom
+# 
+# http://spatialai.org/cellograph/v1#Water
+# 
+_:genid33 <http://www.w3.org/2002/07/owl#Cardinality> "12"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#Cardinality> "6"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#minCardinality> "500"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#Cardinality> "6"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

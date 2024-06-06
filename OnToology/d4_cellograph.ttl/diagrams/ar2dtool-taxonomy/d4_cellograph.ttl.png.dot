@@ -1,0 +1,33 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "cg:MaterialEntity" ; /*classes style*/
+	"cg:HydrogenBond" -> "cg:ChemicalBond" [ label = "rdfs:subClassOf" ];
+	"cg:NitrocelluloseGunPowder" -> "cg:CellulosicProduct" [ label = "rdfs:subClassOf" ];
+	"cg:Cellulose" -> "cg:Polysaccharide" [ label = "rdfs:subClassOf" ];
+	"cg:HydrogenAtom" -> "cg:Atom" [ label = "rdfs:subClassOf" ];
+	"cg:CellulosicPaper" -> "cg:CellulosicProduct" [ label = "rdfs:subClassOf" ];
+	"cg:SomeAnimal" -> "cg:CelluloseNaturalSource" [ label = "rdfs:subClassOf" ];
+	"cg:CelluloseDerivedBiofuel" -> "cg:CellulosicProduct" [ label = "rdfs:subClassOf" ];
+	"cg:CellulosicFabric" -> "cg:CellulosicProduct" [ label = "rdfs:subClassOf" ];
+	"cg:D-Glucose" -> "cg:Carbohydrate" [ label = "rdfs:subClassOf" ];
+	"cg:PlantCell" -> "cg:MaterialEntity" [ label = "rdfs:subClassOf" ];
+	"cg:Polysaccharide" -> "cg:Carbohydrate" [ label = "rdfs:subClassOf" ];
+	"cg:OrganicCompound" -> "cg:ChemicalEntity" [ label = "rdfs:subClassOf" ];
+	"cg:ChemicalBond" -> "cg:ChemicalEntity" [ label = "rdfs:subClassOf" ];
+	"cg:CellulosicProduct" -> "cg:MaterialEntity" [ label = "rdfs:subClassOf" ];
+	"cg:GlycosidicBond" -> "cg:ChemicalBond" [ label = "rdfs:subClassOf" ];
+	"cg:SomeBacteria" -> "cg:CelluloseNaturalSource" [ label = "rdfs:subClassOf" ];
+	"cg:CelluloseFiber" -> "cg:FiberMaterial" [ label = "rdfs:subClassOf" ];
+	"cg:Atom" -> "cg:ChemicalEntity" [ label = "rdfs:subClassOf" ];
+	"cg:CelluloseMicrofibril" -> "cg:MaterialEntity" [ label = "rdfs:subClassOf" ];
+	"cg:ChemicalEntity" -> "cg:MaterialEntity" [ label = "rdfs:subClassOf" ];
+	"cg:Water" -> "cg:MaterialEntity" [ label = "rdfs:subClassOf" ];
+	"cg:CarbonAtom" -> "cg:Atom" [ label = "rdfs:subClassOf" ];
+	"cg:FiberMaterial" -> "cg:MaterialEntity" [ label = "rdfs:subClassOf" ];
+	"cg:Plant" -> "cg:CelluloseNaturalSource" [ label = "rdfs:subClassOf" ];
+	"cg:Carbohydrate" -> "cg:OrganicCompound" [ label = "rdfs:subClassOf" ];
+	"cg:OxygenAtom" -> "cg:Atom" [ label = "rdfs:subClassOf" ];
+	"cg:CelluloseNaturalSource" -> "cg:MaterialEntity" [ label = "rdfs:subClassOf" ];
+
+}
